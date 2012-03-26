@@ -31,4 +31,5 @@
   <project name="CyanogenMod/android_device_semc_smultron" path="device/semc/smultron" remote="github" />
   <project name="CyanogenMod/android_device_semc_urushi" path="device/semc/urushi" remote="github" />
   <project name="CyanogenMod/android_device_semc_zeus" path="device/semc/zeus" remote="github" />
+  <project name="CyanogenMod/android_device_lge_star-common" path="device/lge/star-common" remote="github">
 </manifest>
