@@ -17,6 +17,9 @@
 
   <project name="CyanogenMod/android_device_samsung_crespo" path="device/samsung/crespo" remote="github" />
   <project name="CyanogenMod/android_device_samsung_crespo4g" path="device/samsung/crespo4g" remote="github" />
+  <project name="CyanogenMod/android_device_samsung_p1" path="device/samsung/p1" remote="github" />
+  <project name="CyanogenMod/android_device_samsung_p1c" path="device/samsung/p1c" remote="github" />
+  <project name="CyanogenMod/android_device_samsung_p1-common" path="device/samsung/p1-common" remote="github" />
   <project name="CyanogenMod/android_device_samsung_p4wifi" path="device/samsung/p4wifi" remote="github" />
   <project name="CyanogenMod/android_device_samsung_p4tmo" path="device/samsung/p4tmo" remote="github" />
 
@@ -32,4 +35,7 @@
   <project name="CyanogenMod/android_device_semc_smultron" path="device/semc/smultron" remote="github" />
   <project name="CyanogenMod/android_device_semc_urushi" path="device/semc/urushi" remote="github" />
   <project name="CyanogenMod/android_device_semc_zeus" path="device/semc/zeus" remote="github" />
+  
+  <project name="CyanogenMod/android_kernel_samsung_p1" path="kernel/samsung/p1" remote="github" revision="android-samsung-2.6.35" />
+  <project name="CyanogenMod/android_kernel_samsung_galaxytab-cdma" path="kernel/samsung/p1c" remote="github" />
 </manifest>
