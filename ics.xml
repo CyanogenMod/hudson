@@ -16,10 +16,14 @@
   <project name="CyanogenMod/android_device_asus_tf101" path="device/asus/tf101" remote="github" />
   <project name="CyanogenMod/android_device_asus_tf201" path="device/asus/tf201" remote="github" />
 
+  <project name="CyanogenMod/android_device_samsung_captivatemtd" path="device/samsung/captivatemtd" remote="github" />
   <project name="CyanogenMod/android_device_samsung_crespo" path="device/samsung/crespo" remote="github" />
   <project name="CyanogenMod/android_device_samsung_crespo4g" path="device/samsung/crespo4g" remote="github" />
+  <project name="CyanogenMod/android_device_samsung_galaxysmtd" path="device/samsung/galaxysmtd" remote="github" />
+  <project name="CyanogenMod/android_device_samsung_galaxysbmtd" path="device/samsung/galaxysbmtd" remote="github" />
   <project name="CyanogenMod/android_device_samsung_p4wifi" path="device/samsung/p4wifi" remote="github" />
   <project name="CyanogenMod/android_device_samsung_p4tmo" path="device/samsung/p4tmo" remote="github" />
+  <project name="CyanogenMod/android_device_samsung_vibrantmtd" path="device/samsung/vibrantmtd" remote="github" />
 
   <project name="CyanogenMod/android_device_semc_hallon" path="device/semc/hallon" remote="github" />
   <project name="CyanogenMod/android_device_semc_anzu" path="device/semc/anzu" remote="github" />
@@ -33,4 +37,6 @@
   <project name="CyanogenMod/android_device_semc_smultron" path="device/semc/smultron" remote="github" />
   <project name="CyanogenMod/android_device_semc_urushi" path="device/semc/urushi" remote="github" />
   <project name="CyanogenMod/android_device_semc_zeus" path="device/semc/zeus" remote="github" />
+
+  <project name="CyanogenMod/android_kernel_samsung_aries" path="kernel/samsung/aries" remote="github" revision="android-samsung-3.0-ics" />
 </manifest>
