@@ -48,4 +48,9 @@
   <project name="CyanogenMod/android_device_samsung_galaxysbmtd" path="device/samsung/galaxysbmtd" revision="ics" />
   <project name="CyanogenMod/android_device_samsung_vibrantmtd" path="device/samsung/vibrantmtd" revision="ics" />
   <project name="CyanogenMod/android_kernel_samsung_aries" path="kernel/samsung/aries" revision="android-samsung-3.0-ics" />
+  
+  <project name="CyanogenMod/android_device_samsung_galaxys2" path="device/samsung/galaxys2" revision="ics" />
+  <project name="CyanogenMod/android_device_samsung_i777" path="device/samsung/i777" revision="ics" />
+  <project name="CyanogenMod/android_device_samsung_n7000" path="device/samsung/n7000" revision="ics" />
+  <project name="CyanogenMod/android_kernel_samsung_smdk4210" path="kernel/samsung/smdk4210" revision="ics" />
 </manifest>
