@@ -36,6 +36,10 @@
   <project name="CyanogenMod/android_device_samsung_p4" path="device/samsung/p4" revision="ics" />
   <project name="CyanogenMod/android_device_samsung_p3" path="device/samsung/p3" revision="ics" />
 
+  <project name="CyanogenMod/android_device_samsung_p5-common" path="device/samsung/p5-common" revision="ics" />
+  <project name="CyanogenMod/android_device_samsung_p5wifi" path="device/samsung/p5wifi" revision="ics" />
+  <project name="CyanogenMod/android_device_samsung_p5" path="device/samsung/p5" revision="ics" />
+
   <project name="CyanogenMod/android_device_samsung_p1-common" path="device/samsung/p1-common" revision="ics" />
   <project name="CyanogenMod/android_device_samsung_p1" path="device/samsung/p1" revision="ics" />
   <project name="CyanogenMod/android_device_samsung_p1c" path="device/samsung/p1c" revision="ics" />
