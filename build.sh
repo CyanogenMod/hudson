@@ -95,9 +95,9 @@ check_result "repo init failed."
 # make sure ccache is in PATH
 if [[ "$REPO_BRANCH" =~ "jellybean" || $REPO_BRANCH =~ "cm-10" ]]
 then
-export CCACHE_DIR=~/.jb_ccache
+export CCACHE_DIR=$WORKSPACE/.jb_ccache
 else
-export CCACHE_DIR=~/.ics_ccache
+export CCACHE_DIR=$WORKSPACE/.ics_ccache
 fi
 
 cp $WORKSPACE/hudson/$REPO_BRANCH.xml .repo/local_manifest.xml
@@ -183,9 +183,9 @@ then
   fi
 fi
 
-if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "10.0" ]
+if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "100.0" ]
 then
-  ccache -M 10G
+  ccache -M 100G
 fi
 
 WORKSPACE=$WORKSPACE LUNCH=$LUNCH sh $WORKSPACE/hudson/changes/buildlog.sh 2>&1
