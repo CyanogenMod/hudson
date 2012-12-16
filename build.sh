@@ -75,10 +75,10 @@ then
   chmod a+x ~/bin/repo
 fi
 
-git config --global user.name $(whoami)@$NODE_NAME
-git config --global user.email jenkins@cyanogenmod.com
+git config --global user.name "Jared Szechy"
+git config --global user.email jared.szechy@gmail.com
 
-if [[ "$REPO_BRANCH" =~ "jellybean" || $REPO_BRANCH =~ "cm-10" ]]; then 
+if [[ "$REPO_BRANCH" =~ "jellybean" || $REPO_BRANCH =~ "cm-10" ]]; then
    JENKINS_BUILD_DIR=jellybean
 else
    JENKINS_BUILD_DIR=$REPO_BRANCH
@@ -100,11 +100,9 @@ check_result "repo init failed."
 # make sure ccache is in PATH
 if [[ "$REPO_BRANCH" =~ "jellybean" || $REPO_BRANCH =~ "cm-10" ]]
 then
-export PATH="$PATH:/opt/local/bin/:$PWD/prebuilts/misc/$(uname|awk '{print tolower($0)}')-x86/ccache"
-export CCACHE_DIR=~/.jb_ccache
+export CCACHE_DIR=$WORKSPACE/.jb_ccache
 else
-export PATH="$PATH:/opt/local/bin/:$PWD/prebuilt/$(uname|awk '{print tolower($0)}')-x86/ccache"
-export CCACHE_DIR=~/.ics_ccache
+export CCACHE_DIR=$WORKSPACE/.ics_ccache
 fi
 
 if [ -f ~/.jenkins_profile ]
@@ -210,7 +208,8 @@ fi
 TIME_SINCE_LAST_CLEAN=$(expr $(date +%s) - $LAST_CLEAN)
 # convert this to hours
 TIME_SINCE_LAST_CLEAN=$(expr $TIME_SINCE_LAST_CLEAN / 60 / 60)
-if [ $TIME_SINCE_LAST_CLEAN -gt "24" -o $CLEAN = "true" ]
+
+if [ $TIME_SINCE_LAST_CLEAN -gt "240" -o $CLEAN = "true" ]
 then
   echo "Cleaning!"
   touch .clean
@@ -219,7 +218,7 @@ else
   echo "Skipping clean: $TIME_SINCE_LAST_CLEAN hours since last clean."
 fi
 
-time mka bacon recoveryzip recoveryimage checkapi
+time mka bacon recoveryzip recoveryimage checkapi 2>&1 | tee compile.log
 check_result "Build failed."
 
 cp $OUT/cm-*.zip* $WORKSPACE/archive
@@ -237,7 +236,6 @@ ZIP=$(ls $WORKSPACE/archive/cm-*.zip)
 unzip -p $ZIP system/build.prop > $WORKSPACE/archive/build.prop
 
 # CORE: save manifest used for build (saving revisions as current HEAD)
-rm -f .repo/local_manifest.xml
 repo manifest -o $WORKSPACE/archive/core.xml -r
 
 # chmod the files in case UMASK blocks permissions
