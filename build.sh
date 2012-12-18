@@ -209,11 +209,11 @@ TIME_SINCE_LAST_CLEAN=$(expr $(date +%s) - $LAST_CLEAN)
 # convert this to hours
 TIME_SINCE_LAST_CLEAN=$(expr $TIME_SINCE_LAST_CLEAN / 60 / 60)
 
-if [ $TIME_SINCE_LAST_CLEAN -gt "240" -o $CLEAN = "true" ]
+if [ $TIME_SINCE_LAST_CLEAN -gt "23" -o $CLEAN = "true" ]
 then
   echo "Cleaning!"
   touch .clean
-  make clobber
+  mka installclean
 else
   echo "Skipping clean: $TIME_SINCE_LAST_CLEAN hours since last clean."
 fi
