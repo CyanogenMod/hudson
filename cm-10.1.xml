@@ -11,4 +11,8 @@
   <project name="CyanogenMod/android_device_samsung_crespo" path="device/samsung/crespo" revision="cm-10.1" />
   <project name="CyanogenMod/android_device_samsung_crespo4g" path="device/samsung/crespo4g" revision="cm-10.1" />
   <project name="CyanogenMod/android_kernel_samsung_crespo" path="kernel/samsung/crespo" revision="cm-10.1" />
+
+  <project name="CyanogenMod/android_device_samsung_toroplus" path="device/samsung/toroplus" revision="cm-10.1" />
+  <project name="CyanogenMod/android_device_samsung_tuna" path="device/samsung/tuna" revision="cm-10.1" />
+  <project name="CyanogenMod/android_kernel_samsung_tuna" path="kernel/samsung/tuna" revision="cm-10.1" />
 </manifest>
