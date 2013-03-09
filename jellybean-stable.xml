@@ -15,4 +15,5 @@
   <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="jellybean-stable" />
   <project name="TheMuppets/proprietary_vendor_sony" path="vendor/sony" revision="jellybean-stable" />
   <project name="TheMuppets/proprietary_vendor_widevine" path="vendor/widevine" revision="jellybean-stable" />
+  <project name="hadicoffee/proprietary_vendor_allwinner" path="vendor/allwinner" revision="jellybean-stable" />
 </manifest>
