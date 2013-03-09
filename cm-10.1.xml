@@ -20,5 +20,5 @@
   <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="cm-10.1" />
   <project name="TheMuppets/proprietary_vendor_sony" path="vendor/sony" revision="cm-10.1" />
   <project name="TheMuppets/proprietary_vendor_widevine" path="vendor/widevine" revision="cm-10.1" />
-  <project name="hadicoffee/proprietary_vendor_allwinner" path="vendor/allwinner/a10" revision="cm-10.1" />
+  <project name="hadicoffee/proprietary_vendor_allwinner" path="vendor/allwinner" revision="cm-10.1" />
 </manifest>
