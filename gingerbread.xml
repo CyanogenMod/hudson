@@ -16,5 +16,5 @@
   <project name="TheMuppets/proprietary_vendor_malata" path="vendor/malata" revision="gingerbread" />
   <project name="TheMuppets/proprietary_vendor_huawei" path="vendor/huawei" revision="gingerbread" />
   <project name="TheMuppets/proprietary_vendor_advent" path="vendor/advent" revision="gingerbread" />
-  <project name="hadicoffee/proprietary_vendor_allwinner" path="vendor/allwinner/a10" revision="gingerbread" />
+  <project name="hadicoffee/proprietary_vendor_allwinner" path="vendor/allwinner" revision="gingerbread" />
 </manifest>
