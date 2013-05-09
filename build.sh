@@ -177,31 +177,31 @@ case $LUNCH in
         export LUNCH="cm_a700-userdebug"
         ;;
     "cm_otter-common-userdebug")
-        export LUNCH="cm_otter-userdebug";
+        export LUNCH="cm_otter-userdebug"
         ;;
     "cm_omap4-common-userdebug")
-        export LUNCH="cm_maserati-userdebug";
+        export LUNCH="cm_maserati-userdebug"
         ;;
     "cm_aries-common-userdebug")
-        export LUNCH="cm_galaxysmtd-userdebug";
+        export LUNCH="cm_galaxysmtd-userdebug"
         ;;
     "cm_msm8660-common-userdebug")
-        export LUNCH="cm_hercules-userdebug";
+        export LUNCH="cm_hercules-userdebug"
         ;;
     "cm_msm8960-common-userdebug")
-        export LUNCH="cm_d2-att-userdebug";
+        export LUNCH="cm_d2-att-userdebug"
         ;;
     "cm_n80xx-common-userdebug")
-        export LUNCH="cm_n8000-userdebug";
+        export LUNCH="cm_n8000-userdebug"
         ;;
     "cm_p1-common-userdebug")
-        export LUNCH="cm_p1-userdebug";
+        export LUNCH="cm_p1-userdebug"
         ;;
     "cm_tuna-userdebug")
-        export LUNCH="cm_maguro-userdebug";
+        export LUNCH="cm_maguro-userdebug"
         ;;
     "cm_common-userdebug")
-        export LUNCH="cm_mint-userdebug";
+        export LUNCH="cm_mint-userdebug"
         ;;
 esac
 lunch $LUNCH
