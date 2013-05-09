@@ -171,6 +171,39 @@ then
 fi
 
 . build/envsetup.sh
+# Workaround for Cid not liking common hardware repositories
+case $LUNCH in
+    "cm_t30-common-userdebug")
+        export LUNCH="cm_a700-userdebug"
+        ;;
+    "cm_otter-common-userdebug")
+        export LUNCH="cm_otter-userdebug";
+        ;;
+    "cm_omap4-common-userdebug")
+        export LUNCH="cm_maserati-userdebug";
+        ;;
+    "cm_aries-common-userdebug")
+        export LUNCH="cm_galaxysmtd-userdebug";
+        ;;
+    "cm_msm8660-common-userdebug")
+        export LUNCH="cm_hercules-userdebug";
+        ;;
+    "cm_msm8960-common-userdebug")
+        export LUNCH="cm_d2-att-userdebug";
+        ;;
+    "cm_n80xx-common-userdebug")
+        export LUNCH="cm_n8000-userdebug";
+        ;;
+    "cm_p1-common-userdebug")
+        export LUNCH="cm_p1-userdebug";
+        ;;
+    "cm_tuna-userdebug")
+        export LUNCH="cm_maguro-userdebug";
+        ;;
+    "cm_common-userdebug")
+        export LUNCH="cm_mint-userdebug";
+        ;;
+esac
 lunch $LUNCH
 check_result "lunch failed."
 
