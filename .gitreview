@@ -1,5 +1,0 @@
-[gerrit]
-host=review.cyanogenmod.org
-port=29418
-project=CyanogenMod/hudson
-defaultbranch=master
